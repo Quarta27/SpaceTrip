@@ -1,3 +1,6 @@
+.container-content {
+    width: 1000px;
+}
 
 body {
     padding-top: 70px;
@@ -22,8 +25,27 @@ body {
     background-size: cover;
 }
 
+.picture {
+    min-height: 400px;
+    background: cover;
+    background-position: center;
+}
+
+.picture-box {
+    padding-top: 30px;
+}
+
+.picture-tag {
+    
+}
+
+.picture-tag > p {
+    color:darkgrey
+}
 
 footer {
+    margin-top: 30px;
+    padding-top:30px;
     min-height: 300px;
     background-color: #222;
     color: #fff;
