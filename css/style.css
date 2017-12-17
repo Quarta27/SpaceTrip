@@ -27,6 +27,20 @@ body {
 
 .picture {
     min-height: 400px;
+}
+
+.picture-small {
+    height: 200px;
+    width: 200px;
+}
+
+.picture-big {
+    
+}
+
+.picture,
+.picture-small,
+.picture-big {
     background: cover;
     background-position: center;
 }
@@ -41,6 +55,10 @@ body {
 
 .picture-tag > p {
     color:darkgrey
+}
+
+.tag-list {
+    text-align: center;
 }
 
 footer {
