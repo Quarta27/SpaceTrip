@@ -68,7 +68,7 @@ shortcuts-list {
 }
 
 #sidebar-right {
-    margin-bottom: 100px;
+    margin-bottom: auto;
 }
 
 footer {
@@ -76,6 +76,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-top: 50px;
     padding-top: 30px;
     min-height: 100px;
     background-color: #222;
