@@ -4,6 +4,7 @@
 
 body {
     padding-top: 70px;
+    margin-bottom: 100px;
 }
 
 #carousel {
@@ -35,7 +36,8 @@ body {
 }
 
 .picture-big {
-    
+    height: 600px;
+    width: 600px;
 }
 
 .picture,
@@ -61,17 +63,24 @@ body {
     text-align: center;
 }
 
-footer {
-    margin-top: 30px;
-    padding-top:30px;
-    min-height: 300px;
-    background-color: #222;
-    color: #fff;
+shortcuts-list {
+    margin-bottom: 30px;
 }
 
-.footer-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
+#sidebar-right {
+    margin-bottom: 100px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    min-height: 100px;
+    background-color: #222;
+    color: #fff;
+    
 }
 
 footer ul li {
@@ -80,4 +89,8 @@ footer ul li {
 
 footer div ul li a {
     text-decoration: none;
+}
+
+.personalarea-btn {
+    margin-bottom: 10px;
 }
