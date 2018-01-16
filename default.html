@@ -1,70 +1,267 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="/ico/favicon.png">
 
     <title>SpeceTrip</title>
-
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
+</head>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          
-          <ul class="nav navbar-nav navbar-right">
-           <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="spacetripstory.html">SpaceTrip Story</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    
-        <div class="container-fluid">
-        <footer>
-            <row>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nunc pellentesque, lacinia turpis sit amet, blandit nibh. Aliquam in ex id nunc rutrum iaculis eget vitae lectus. Pellentesque porttitor, tortor et dapibus congue, nulla elit tincidunt purus, ut convallis justo lacus at tellus. Ut urna dui, venenatis non metus vitae, efficitur condimentum nulla. Sed id fringilla eros. Vestibulum et condimentum arcu. Aenean aliquam pharetra lectus, non vestibulum lorem sollicitudin sodales. Aliquam nec commodo felis. Morbi sed orci sit amet dui ultrices lobortis a sagittis odio. Sed commodo arcu semper diam faucibus, sit amet rutrum est molestie. Aliquam molestie tincidunt erat in lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Donec ut lectus sit amet tellus suscipit suscipit. In urna justo, viverra vel leo quis, luctus congue ligula. Nam a pharetra justo.</p>
-                </div>
-                
-                <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nunc pellentesque, lacinia turpis sit amet, blandit nibh. Aliquam in ex id nunc rutrum iaculis eget vitae lectus. Pellentesque porttitor, tortor et dapibus congue, nulla elit tincidunt purus, ut convallis justo lacus at tellus. Ut urna dui, venenatis non metus vitae, efficitur condimentum nulla. Sed id fringilla eros. Vestibulum et condimentum arcu. Aenean aliquam pharetra lectus, non vestibulum lorem sollicitudin sodales. Aliquam nec commodo felis. Morbi sed orci sit amet dui ultrices lobortis a sagittis odio. Sed commodo arcu semper diam faucibus, sit amet rutrum est molestie. Aliquam molestie tincidunt erat in lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Donec ut lectus sit amet tellus suscipit suscipit. In urna justo, viverra vel leo quis, luctus congue ligula. Nam a pharetra justo.</div>
-                
-                <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nunc pellentesque, lacinia turpis sit amet, blandit nibh. Aliquam in ex id nunc rutrum iaculis eget vitae lectus. Pellentesque porttitor, tortor et dapibus congue, nulla elit tincidunt purus, ut convallis justo lacus at tellus. Ut urna dui, venenatis non metus vitae, efficitur condimentum nulla. Sed id fringilla eros. Vestibulum et condimentum arcu. Aenean aliquam pharetra lectus, non vestibulum lorem sollicitudin sodales. Aliquam nec commodo felis. Morbi sed orci sit amet dui ultrices lobortis a sagittis odio. Sed commodo arcu semper diam faucibus, sit amet rutrum est molestie. Aliquam molestie tincidunt erat in lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Donec ut lectus sit amet tellus suscipit suscipit. In urna justo, viverra vel leo quis, luctus congue ligula. Nam a pharetra justo.</div>
-            </row>
-        </footer>
+<div>
+    <div class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">Brand</a>
     </div>
-    
-    
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  
+</div>
+
+<div class="nav-side-menu">
+    <div class="brand">Navigation</div>
+    <!-- Permette di far apparire la barra in alto versione mobile -->
+    <i class="fa fa-bars fa-2x toggle-btn glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <!-- Prima voce di una lista -->
+            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                <a href="home.html">
+                    <i class="fa fa-gift fa-lg"></i> Home
+                </a>
+            </li>
+
+            <!-- Prima voce di una lista -->
+            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <a href="#">
+                    <i class="fa fa-globe fa-lg"></i> Services
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </li>
+            <!-- valori della lista dificati -->
+            <ul class="sub-menu collapse" id="service">
+                <li>New Service 1</li>
+                <li>New Service 2</li>
+                <li>New Service 3</li>
+            </ul>
+            <li>
+                <a href="spacetripstory.html">
+                    <i class="fa fa-user fa-lg"></i> SpaceTrip Story
+                </a>
+            </li>
+            <li>
+                <a href="shareexp.html">
+                    <i class="fa fa-users fa-lg"></i> Share your experience
+                </a>
+            </li>
+            <li>
+                <a href="careers.html">
+                    <i class="fa fa-users fa-lg"></i> Careers
+                </a>
+            </li>
+            <li>
+                <a href="reservespacetrip.html">
+                    <i class="fa fa-users fa-lg"></i> Reserve your Space Trip
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <i class="fa fa-users fa-lg"></i> Gallery
+                </a>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class="fa fa-users fa-lg"></i> Services
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="fa fa-users fa-lg"></i> Courses
+                </a>
+            </li>
+            <li>
+                <a href="news.html">
+                    <i class="fa fa-users fa-lg"></i> News
+                </a>
+            </li>
+            <li>
+                <a href="whoweare.html">
+                    <i class="fa fa-users fa-lg"></i> Who we are
+                </a>
+            </li>
+            <li>
+                <a href="store.html">
+                    <i class="fa fa-users fa-lg"></i> Store
+                </a>
+            </li>
+            <li>
+                <a href="termscond.html">
+                    <i class="fa fa-users fa-lg"></i> Terms & Conditions
+                </a>
+            </li>
+        </ul>
+        <!-- menu content -->
+    </div>
+    <!-- menu list -->
+</div>
+
+<body>
+    <row>
+        <div class="col-xs-12 col-sm-offset-5 col-sm-7 col-md-offset-3 col-md-9">
+            <div class="navbar navbar-inverse navbar-personalarea">
+                <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon-chevron-right"> </span> Path</a>
+                <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon-chevron-right"> </span> Lv 1</a>
+                <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon-chevron-right"> </span> Lv 2</a>
+
+                <!--Questa in modalità phone sparische -->
+                <div class="navbar-personalarea-tools-desktop">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="personalarea.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-right">
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default glyphicon glyphicon-search"> </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!--In modalità tablet >= appare -->
+                <div class="navbar-personalarea-tools-mobile">
+                    <a href="personalarea.html">
+                        <span class="glyphicon glyphicon-user"> </span>
+                    </a>
+                    <button type="submit" class="btn btn-default glyphicon glyphicon-search navbar-right"> </button>
+                </div>
+
+            </div>
+        </div>
+    </row>
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <h4>This is suppose to be in the main content</h4>
+                <div class="picture item active" style="background-image: url(https://source.unsplash.com/category/city)"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie urna imperdiet mi pretium cursus.
+                    Mauris sed venenatis tortor. Fusce cursus tortor fermentum odio rhoncus hendrerit. Etiam in faucibus
+                    elit, id rhoncus ex. Fusce at elementum ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed placerat auctor venenatis. Suspendisse id dapibus ipsum. Aenean facilisis turpis mauris, quis dignissim
+                    ligula accumsan at. Praesent fermentum lacus tempus, tempor elit sed, finibus sem. Fusce vel dignissim
+                    ante. Curabitur tempus eu leo mollis dapibus. Curabitur in malesuada velit. Donec lacus magna, laoreet
+                    quis feugiat sit amet, bibendum et turpis. Nam non enim non nisi pellentesque finibus in sed leo</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie urna imperdiet mi pretium cursus.
+                    Mauris sed venenatis tortor. Fusce cursus tortor fermentum odio rhoncus hendrerit. Etiam in faucibus
+                    elit, id rhoncus ex. Fusce at elementum ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed placerat auctor venenatis. Suspendisse id dapibus ipsum. Aenean facilisis turpis mauris, quis dignissim
+                    ligula accumsan at. Praesent fermentum lacus tempus, tempor elit sed, finibus sem. Fusce vel dignissim
+                    ante. Curabitur tempus eu leo mollis dapibus. Curabitur in malesuada velit. Donec lacus magna, laoreet
+                    quis feugiat sit amet, bibendum et turpis. Nam non enim non nisi pellentesque finibus in sed leo</p>
+            </div>
+
+            <div class="col-xs-12 col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Shortcuts</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="exp.html">Experience</a>
+                            </li>
+                            <li>
+                                <a href="costs.html">Costs</a>
+                            </li>
+                            <li>
+                                <a href="healtinfo.html">Healt Info</a>
+                            </li>
+                            <li>
+                                <a href="technologies.html">Technologies</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- footer -->
+<footer class="bottom">
+    <row>
+        <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-8">
+            <div class="footer-menu">
+                <row>
+                    <div class="col-xs-12 col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="spacetripstory.html">SpaceTrip Story</a>
+                            </li>
+                            <li>
+                                <a href="shareexp.html">Share your Experiences</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="termscond.html">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="reservespacetrip.html">Reserve your SpaceTrip</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="courses.html">Courses</a>
+                            </li>
+                            <li>
+                                <a href="news.html">News</a>
+                            </li>
+                            <li>
+                                <a href="whoweare.html">Who we are</a>
+                            </li>
+                            <li>
+                                <a href="store.html">Store</a>
+                            </li>
+                        </ul>
+                    </div>
+                </row>
+
+
+            </div>
+        </div>
+    </row>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </html>
