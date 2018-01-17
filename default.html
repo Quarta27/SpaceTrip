@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="it">
 
+<!-- Header -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" href="favicon.ico" />
 
     <title>SpeceTrip</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<!-- Navbar con il logo -->
 <div>
     <div class="navbar navbar-inverse">
-        <a class="navbar-brand" href="#">Brand</a>
+        <center>
+            <a class="navbar-brand" href="index.html">
+                SpaceTrip
+                <!-- <img class="navbar-logo" src="logo.png"> -->
+            </a>
+        </center>
     </div>
 </div>
 
+<!-- Menu laterale sx -->
 <div class="nav-side-menu">
-    <div class="brand">Navigation</div>
+    <div class="brand">Menu bar</div>
     <!-- Permette di far apparire la barra in alto versione mobile -->
-    <i class="fa fa-bars fa-2x toggle-btn glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#menu-content"></i>
+    <i class="fa fa-bars fa-2x toggle-btn glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#menu-content">
+    </i>
     <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
             <!-- Prima voce di una lista -->
-            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+            <li>
                 <a href="home.html">
                     <i class="fa fa-gift fa-lg"></i> Home
                 </a>
             </li>
 
-            <!-- Prima voce di una lista -->
-            <li data-toggle="collapse" data-target="#service" class="collapsed">
-                <a href="#">
-                    <i class="fa fa-globe fa-lg"></i> Services
-                    <span class="glyphicon glyphicon-chevron-down"></span>
-                </a>
-            </li>
-            <!-- valori della lista dificati -->
-            <ul class="sub-menu collapse" id="service">
-                <li>New Service 1</li>
-                <li>New Service 2</li>
-                <li>New Service 3</li>
-            </ul>
             <li>
                 <a href="spacetripstory.html">
                     <i class="fa fa-user fa-lg"></i> SpaceTrip Story
                 </a>
             </li>
-            <li>
+
+            <li data-toggle="collapse" data-target="#shareexp" class="collapsed">
                 <a href="shareexp.html">
                     <i class="fa fa-users fa-lg"></i> Share your experience
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
             </li>
+            <!-- valori della lista dificati -->
+            <ul class="sub-menu collapse" id="shareexp">
+                <li>
+                    <a href="exp.html">Experiences</a>
+                </li>
+                <li>
+                    <a href="tellus.html">Tell us</a>
+                </li>
+            </ul>
             <li>
                 <a href="careers.html">
                     <i class="fa fa-users fa-lg"></i> Careers
                 </a>
             </li>
-            <li>
+            <li data-toggle="collapse" data-target="#reservespacetrip" class="collapsed">
                 <a href="reservespacetrip.html">
                     <i class="fa fa-users fa-lg"></i> Reserve your Space Trip
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
             </li>
+            <ul class="sub-menu collapse" id="reservespacetrip">
+                <li data-toggle="collapse" data-target="#cost" class="collapsed">
+                    <a href="cost.html">Cost</a>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </li>
+
+                <ul class="sub-menu collapse" id="cost">
+                    <li>
+                        <a href="howtopay.html">How to pay</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+                <li>
+                    <a href="promotions.html">Promotions</a>
+                </li>
+            </ul>
             <li>
                 <a href="gallery.html">
                     <i class="fa fa-users fa-lg"></i> Gallery
@@ -76,26 +104,69 @@
                     <i class="fa fa-users fa-lg"></i> Services
                 </a>
             </li>
-            <li>
+
+            <li data-toggle="collapse" data-target="#courses" class="collapsed">
                 <a href="courses.html">
                     <i class="fa fa-users fa-lg"></i> Courses
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
             </li>
+            <ul class="sub-menu collapse" id="courses">
+                <li>
+                    <a href="physicaltraining.html">Physical Training</a>
+                </li>
+                <li>
+                    <a href="healtinfo.html">Healt informations</a>
+                </li>
+            </ul>
             <li>
                 <a href="news.html">
                     <i class="fa fa-users fa-lg"></i> News
                 </a>
             </li>
-            <li>
+            <li data-toggle="collapse" data-target="#whoweare" class="collapsed">
                 <a href="whoweare.html">
                     <i class="fa fa-users fa-lg"></i> Who we are
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
+                
             </li>
-            <li>
+            <ul class="sub-menu collapse" id="whoweare">
+                <li>
+                    <a href="team.html">The team</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+                <li>
+                    <a href="goals.html">Ours goals</a>
+                </li>
+                <li data-toggle="collapse" data-target="#vehicles" class="collapsed">
+                    <a href="vehicles.html">Ours vehicles</a>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </li>
+                <ul class="sub-menu collapse" id="vehicles">
+                    <li>
+                        <a href="technologies.html">Technologies</a>
+                    </li>
+                </ul>
+
+            </ul>
+            <li data-toggle="collapse" data-target="#store" class="collapsed">
                 <a href="store.html">
                     <i class="fa fa-users fa-lg"></i> Store
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                 </a>
+                
             </li>
+            <ul class="sub-menu collapse" id="store">
+                <li>
+                    <a href="gadget.html">Gadgets</a>
+                </li>
+                <li>
+                    <a href="clotes.html">Clotes</a>
+                </li>
+            </ul>
             <li>
                 <a href="termscond.html">
                     <i class="fa fa-users fa-lg"></i> Terms & Conditions
@@ -109,15 +180,18 @@
 
 <body>
     <row>
+        <!-- User navbar -->
         <div class="col-xs-12 col-sm-offset-5 col-sm-7 col-md-offset-3 col-md-9">
             <div class="navbar navbar-inverse navbar-personalarea">
-                <a class="navbar-brand" href="#">
+                <!-- Costruzione del path -->
+                <a class="navbar-brand path" href="#">
                     <span class="glyphicon glyphicon-chevron-right"> </span> Path</a>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand path" href="#">
                     <span class="glyphicon glyphicon-chevron-right"> </span> Lv 1</a>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand path" href="#">
                     <span class="glyphicon glyphicon-chevron-right"> </span> Lv 2</a>
 
+                <!-- Elementi per ricerca e accesso -->
                 <!--Questa in modalità phone sparische -->
                 <div class="navbar-personalarea-tools-desktop">
                     <ul class="nav navbar-nav navbar-right">
@@ -150,10 +224,12 @@
             </div>
         </div>
     </row>
+    <!-- Contenuto -->
     <div class="container" id="main">
         <div class="row">
+            <!-- Inserire nel div sottostante il contentenuto -->
             <div class="col-xs-12 col-md-9">
-                <h4>This is suppose to be in the main content</h4>
+                <h4>Page title</h4>
                 <div class="picture item active" style="background-image: url(https://source.unsplash.com/category/city)"></div>
                 <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie urna imperdiet mi pretium cursus.
@@ -172,6 +248,7 @@
                     quis feugiat sit amet, bibendum et turpis. Nam non enim non nisi pellentesque finibus in sed leo</p>
             </div>
 
+            <!-- Widget con shortcuts -->
             <div class="col-xs-12 col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -186,7 +263,7 @@
                                 <a href="costs.html">Costs</a>
                             </li>
                             <li>
-                                <a href="healtinfo.html">Healt Info</a>
+                                <a href="healtinfo.html">Healt Informations</a>
                             </li>
                             <li>
                                 <a href="technologies.html">Technologies</a>
@@ -207,7 +284,7 @@
         <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-8">
             <div class="footer-menu">
                 <row>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-6 col-sm-6">
                         <ul>
                             <li>
                                 <a href="home.html">Home</a>
@@ -230,7 +307,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-6 col-sm-6">
                         <ul>
                             <li>
                                 <a href="gallery.html">Gallery</a>
@@ -258,7 +335,6 @@
             </div>
         </div>
     </row>
-
 </footer>
 
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
