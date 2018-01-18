@@ -20,11 +20,16 @@ body {
 }
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 #homeCarousel {
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< Updated upstream
 /*.carousel-overlay {
     position: absolute;
     top: 75%;
@@ -33,6 +38,16 @@ body {
     color: none;
     z-index: 10;
 }*/
+=======
+.carousel-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+}
+>>>>>>> Stashed changes
 
 .carousel-control.left, .carousel-control.right {
     background-image: none !important;
@@ -42,7 +57,10 @@ body {
 .row {
     min-height: 200px;
     padding-left: 15px;
+<<<<<<< Updated upstream
     padding-bottom: 15px;
+=======
+>>>>>>> Stashed changes
 }
 
 #video-home {
@@ -188,14 +206,23 @@ footer li {
     padding-bottom: 5px;
 }
 
+<<<<<<< Updated upstream
+=======
+footer ul {
+    
+}
+>>>>>>> Stashed changes
 .personalarea-btn {
   margin-bottom: 10px;
 }
 
+<<<<<<< Updated upstream
 .add-tag-button {
     padding-top: 20px;
 }
 
+=======
+>>>>>>> Stashed changes
 .navbar-inverse {
     top: 0;
 }
