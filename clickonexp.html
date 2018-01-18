@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- Header -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="icon" href="favicon.ico" />
+
+    <title>SpaceTrip</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<!-- Navbar con il logo -->
+<div>
+  <div class="navbar navbar-inverse">
+    <center>
+      <a class="navbar-brand" href="index.html">
+        SpaceTrip
+        <!-- <img class="navbar-logo" src="logo.png"> -->
+      </a>
+    </center>
+  </div>
+</div>
+
+<!-- Menu laterale sx -->
+<div class="nav-side-menu">
+  <div class="brand">Menu bar</div>
+  <!-- Permette di far apparire la barra in alto versione mobile -->
+  <i class="fa fa-bars fa-2x toggle-btn glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#menu-content">
+  </i>
+  <div class="menu-list">
+    <ul id="menu-content" class="menu-content collapse out">
+      <!-- Prima voce di una lista -->
+      <li>
+        <a href="home.html">
+          <i class="fa fa-gift fa-lg"></i> Home
+        </a>
+      </li>
+
+      <li>
+        <a href="spacetripstory.html">
+          <i class="fa fa-user fa-lg"></i> SpaceTrip Story
+        </a>
+      </li>
+
+      <li data-toggle="collapse" data-target="#shareexp" class="collapsed">
+        <a href="shareexp.html">
+          <i class="fa fa-users fa-lg"></i> Share your experience
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+      </li>
+      <!-- valori della lista dificati -->
+      <ul class="sub-menu collapse" id="shareexp">
+        <li>
+          <a href="exp.html">Experiences</a>
+        </li>
+        <li>
+          <a href="tellus.html">Tell us</a>
+        </li>
+      </ul>
+      <li>
+        <a href="careers.html">
+          <i class="fa fa-users fa-lg"></i> Careers
+        </a>
+      </li>
+      <li data-toggle="collapse" data-target="#reservespacetrip" class="collapsed">
+        <a href="reservespacetrip.html">
+          <i class="fa fa-users fa-lg"></i> Reserve your Space Trip
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+      </li>
+      <ul class="sub-menu collapse" id="reservespacetrip">
+        <li data-toggle="collapse" data-target="#cost" class="collapsed">
+          <a href="cost.html">Cost</a>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </li>
+
+        <ul class="sub-menu collapse" id="cost">
+          <li>
+            <a href="howtopay.html">How to pay</a>
+          </li>
+        </ul>
+        <li>
+          <a href="destinations.html">Destinations</a>
+        </li>
+        <li>
+          <a href="promotions.html">Promotions</a>
+        </li>
+      </ul>
+      <li>
+        <a href="gallery.html">
+          <i class="fa fa-users fa-lg"></i> Gallery
+        </a>
+      </li>
+      <li>
+        <a href="services.html">
+          <i class="fa fa-users fa-lg"></i> Services
+        </a>
+      </li>
+
+      <li data-toggle="collapse" data-target="#courses" class="collapsed">
+        <a href="courses.html">
+          <i class="fa fa-users fa-lg"></i> Courses
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+      </li>
+      <ul class="sub-menu collapse" id="courses">
+        <li>
+          <a href="physicaltraining.html">Physical Training</a>
+        </li>
+        <li>
+          <a href="healtinfo.html">Healt informations</a>
+        </li>
+      </ul>
+      <li>
+        <a href="news.html">
+          <i class="fa fa-users fa-lg"></i> News
+        </a>
+      </li>
+      <li data-toggle="collapse" data-target="#whoweare" class="collapsed">
+        <a href="whoweare.html">
+          <i class="fa fa-users fa-lg"></i> Who we are
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
+      </li>
+      <ul class="sub-menu collapse" id="whoweare">
+        <li>
+          <a href="team.html">The team</a>
+        </li>
+        <li>
+          <a href="contacts.html">Contacts</a>
+        </li>
+        <li>
+          <a href="goals.html">Ours goals</a>
+        </li>
+        <li data-toggle="collapse" data-target="#vehicles" class="collapsed">
+          <a href="vehicles.html">Ours vehicles</a>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </li>
+        <ul class="sub-menu collapse" id="vehicles">
+          <li>
+            <a href="technologies.html">Technologies</a>
+          </li>
+        </ul>
+
+      </ul>
+      <li data-toggle="collapse" data-target="#store" class="collapsed">
+        <a href="store.html">
+          <i class="fa fa-users fa-lg"></i> Store
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
+      </li>
+      <ul class="sub-menu collapse" id="store">
+        <li>
+          <a href="gadget.html">Gadgets</a>
+        </li>
+        <li>
+          <a href="clotes.html">Clotes</a>
+        </li>
+      </ul>
+      <li>
+        <a href="termscond.html">
+          <i class="fa fa-users fa-lg"></i> Terms & Conditions
+        </a>
+      </li>
+    </ul>
+    <!-- menu content -->
+  </div>
+  <!-- menu list -->
+</div>
+
+<body>
+  <row>
+      <!-- Contenuto -->
+      
+          <!-- User navbar -->
+          <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9">
+            <div class="navbar navbar-inverse navbar-personalarea">
+              <!-- Costruzione del path -->
+              <a class="navbar-brand path" href="#">
+                <span class="glyphicon glyphicon-chevron-right"> </span> Path</a>
+              <a class="navbar-brand path" href="#">
+                <span class="glyphicon glyphicon-chevron-right"> </span> Lv 1</a>
+              <a class="navbar-brand path" href="#">
+                <span class="glyphicon glyphicon-chevron-right"> </span> Lv 2</a>
+
+              <!-- Elementi per ricerca e accesso -->
+              <!--Questa in modalità phone sparische -->
+              <div class="navbar-personalarea-tools-desktop">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="personalarea.html">
+                      <span class="glyphicon glyphicon-user"></span>
+                    </a>
+                  </li>
+                </ul>
+
+                    <div class="navbar-right">
+                        <form class="navbar-form" role="search" action="search.html">
+                            <a href="search.html">
+                                <button type="button" class="btn btn-default">
+                                  <span class="glyphicon glyphicon-search"></span> Search
+                                </button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                
+                <!--In modalità tablet >= appare -->
+                <div class="navbar-personalarea-tools-mobile">
+                    <a href="personalarea.html">
+                        <span class="glyphicon glyphicon-user"> </span>
+                    </a>
+                    <a href="search.html">
+                        <button type="button" class="btn btn-default glyphicon glyphicon-search"> </button>
+                    </a>
+                </div>
+
+              </div>
+
+            </div>
+          <!-- Inserire nel div sottostante il contentenuto -->
+    <div class="container" id="main">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+              
+              <row>
+                  <div class="col-md-12">
+                    <h1>Experience title</h1>
+                    <h2>by Username</h2>
+                  </div>
+              </row>
+              <row>
+
+            <br>
+
+            <div class="col-md-12">
+              <p>Nah, I just don't think I'm cut out for music. But you're good, Marty, you're really good. And this audition tape of your is great, you gotta send it in to the record company. It's like Doc's always saying. Yeah I know, If you put your mind to it you could accomplish anything. That's good advice, Marty. Alright, okay Jennifer. What if I send in the tape and they don't like it. I mean, what if they say I'm no good. What if they say, "Get out of here, kid, you got no future." I mean, I just don't think I can take that kind of rejection. Jesus, I'm beginning to sound like my old man.(Marty breaks off the top part of the scooter, leaving a 1955 version of a skateboard. He takes off on it.) You broke it. Wow, look at him go. Let's get him. What's that thing he's on? It's a board with wheels.(Hilldale – McFly Residence) (Lorraine is changing the scenery on the window.) I can't believe this window is still broken. (She changes it from an Eastern garden to a sunset to New York at night to a mountain.) Well, when the scene screen repairman called Daddy a chicken, Daddy threw him out of the house and now we can't get anybody to fix it. Look how worn out this thing is!I think it's terrible. Girls chasing boys. When I was your age I never chased a boy, or called a boy, or sat in a parked car with a boy. Then how am I supposed to ever meet anybody. Well, it will just happen. Like the way I met your father. That was so stupid, Grandpa hit him with the car. It was meant to be. Anyway, if Grandpa hadn't hit him, then none of you would have been born.</p>
+            
+          </div>
+              </row>
+            <row>
+              <div class="col-xs-6 col-sm-4 col-md-4 text-left">
+                <h3>Tags</h3>
+                  <p><a href="clickontag.html">Tag1</a>, <a href="clickontag.html">Tag2</a>, <a href="clickontag.html">Tag3</a></p>
+                </div>
+                
+                <div class="col-xs-6 col-sm-8 col-md-8 text-left add-tag-button">
+                    <a href="addtag.html">
+                        <button type="button" class="btn btn-primary">Add tag</button>
+                    </a>
+                </div>
+              </row>
+        </div>
+
+        </div>
+      </div>
+  </row>
+</body>
+
+
+<!-- footer -->
+<div class="container-fluid footer">
+<footer>
+    <div class="row footer-row">
+        <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9">
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="spacetripstory.html">SpaceTrip Story</a>
+                            </li>
+                            <li>
+                                <a href="shareexp.html">Share your Experiences</a>
+                            </li>
+                            <li>
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="termscond.html">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="reservespacetrip.html">Reserve your space trip</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="courses.html">Courses</a>
+                            </li>
+                            <li>
+                                <a href="news.html">News</a>
+                            </li>
+                            <li>
+                                <a href="whoweare.html">Who we are</a>
+                            </li>
+                            <li>
+                                <a href="store.html">Store</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</footer>   
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

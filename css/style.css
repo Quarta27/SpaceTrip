@@ -20,20 +20,19 @@ body {
 }
 
 
-
 #homeCarousel {
     margin: 0;
     padding: 0;
 }
 
-.carousel-overlay {
+/*.carousel-overlay {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: none;
     z-index: 10;
-}
+}*/
 
 .carousel-control.left, .carousel-control.right {
     background-image: none !important;
@@ -43,6 +42,7 @@ body {
 .row {
     min-height: 200px;
     padding-left: 15px;
+    padding-bottom: 15px;
 }
 
 #video-home {
@@ -132,12 +132,26 @@ shortcuts-list {
 .container {
   margin-top: 20px;
 }
+
+.form {
+    padding-bottom: 15px;
+}
+
+.panel-group {
+    padding-bottom: 15px;
+}
+
+.large-button {
+    padding-top: 15px;
+}
+
 footer {
   background-color: #222;
   color: #fff;
   clear: both;
   z-index: 0;
   margin-top: -3em;
+  margin-bottom: -3em;
   position: relative;
   bottom:0;
   left:0;
@@ -145,7 +159,7 @@ footer {
   background-color: #222;
   display: block;
   min-height: 150px;
-  margin-top:20px;
+  margin-top: 20px;
   padding-top: 10px;
 
 }
@@ -174,11 +188,12 @@ footer li {
     padding-bottom: 5px;
 }
 
-footer ul {
-    
-}
 .personalarea-btn {
   margin-bottom: 10px;
+}
+
+.add-tag-button {
+    padding-top: 20px;
 }
 
 .navbar-inverse {
@@ -198,8 +213,8 @@ footer ul {
   background-color: #222;
   position: fixed;
   top: 0px;
-  width: 300px;
-  height: 100%;
+  width: 270px;
+  min-height: 100%;
  /*color: #999999;
  */
   color: #fff;
@@ -413,4 +428,12 @@ footer ul {
    .mobile-hide {
      display: none;
    }
+    
+ }
+ @media (min-width: 992px) {
+   .small-content-page {
+     position:fixed;
+    padding-bottom: 3em;
+   }
+     
  }
